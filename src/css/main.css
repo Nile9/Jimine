@@ -1,0 +1,829 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #ffb300;
+}
+.hidden{
+    opacity: 0;
+    transform: scale(0);
+}
+.logo{
+    max-width: 100%;
+    display: inline-block;
+    width: 7vw;
+    border-radius: 10px;  
+    border: 5px solid #03030300;
+    box-shadow: 2px 1px 5px #99999900; 
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+.form_title{
+    color: #30507D;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 38px;
+}
+input{
+    height: 45px;
+    width: 100%;
+    color: #3B5983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #E9F2FF;
+    border-radius: 5px;
+    padding-left: 25px;
+    
+}
+input:focus{
+    outline: none;
+    border: 2px solid #C1D9FD;
+}
+.form_r_a{
+    opacity: 0;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 6px 50px rgba(217, 229, 255, 0.7);
+    max-width: 415px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+   
+}
+.Form_authorization .Form_registration {
+    opacity: 0;
+    
+}
+.transform{
+    transition-duration: 1s;
+}
+.animation{
+    animation-name: fedeForm;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fedeForm {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: .75;
+    }100%{
+        opacity: 1;
+    }
+    
+}
+.form_field{
+    margin-bottom: 13px;
+}
+.form_buttom button {
+    background: #247FFF;
+    height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    border: 2px solid #E9F2FF;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    
+    
+}
+
+.form_buttom button:hover{
+    background-color: #0d6cf2;
+    transform: scale(1.05);
+}
+.buttom_change button{ 
+    text-decoration: none;
+    background-color: #C6CFDC;
+}
+.buttom_change button:hover{
+    background: #E2E6F0;
+    color: #fff;
+}
+
+.divider{
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 16px;
+    color: #405D87;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.regis{
+    background: #F1F5FE;
+}
+.form_r_a{
+   margin-left: 70vb;
+   margin-top: 10vh;
+}
+.alert-enter{
+    opacity: 1;
+    transform: scale(0.9);
+    
+}
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opasity 300ms, transform 300ms;
+}
+.alert-exit {
+    opacity: 1;
+    transform: scale(0.9);
+}
+.alert-exit-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opasity 300ms, transform 300ms;
+}
+.Head_buttom button{
+    display:inline-block;
+    background: #e3a30e;
+    height: 35px;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px solid #03030300;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    padding: 5px;
+}
+.Logo_div {
+    float: left;
+    margin-right: 5%;
+}
+.Head_buttom button:hover{
+    background-color: #6d5a2d;
+    transform: scale(1.05);
+}
+.Head_buttom .User_icon{
+    transform: scale(1.5);
+    color: white;
+    float: right;
+    margin-top: 25px;
+    margin-right: 30px;
+}
+.Head_buttom .User_icon:hover{
+    color: #ffffff;
+    transform: scale(1.7);
+}
+
+.projects{
+    margin: 30px 50px;
+    width: 50%;
+    float: left;
+}
+.project_card{
+    margin-bottom: 30px;
+    background-color: #e3a30e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
+.project_card .head_card{
+    display: flex;
+    align-items: stretch;
+}
+
+.project_card h4{
+    color: #2f85fd;
+    margin-left: 2%;
+}
+.project_card p{
+    color: #ecf2ff;
+    margin-top: 2%;
+}
+.project_card .configuring{
+    
+    cursor: pointer;
+    transform: scale(1.4);
+    color: #ffffff;
+    margin-right: 15px;
+}
+.config{
+    
+    left: 47%;
+    position: absolute;
+    display: flex;
+
+    align-items: stretch;
+}
+.project_card .removal{
+    margin-left: 2%;
+    cursor: pointer;
+    transform: scale(1.4);
+}
+.project_card .configuring:hover{
+    opacity: 0.7;
+    transform: scale(1.6);
+}
+.project_card .removal:hover{
+    opacity: 0.7;
+    transform: scale(1.6);
+}
+.floating_block{
+    border-radius: 10px;
+    background-color: #ffffff;
+    display:inline-block;
+    margin-top: 30px;
+    height: 27ch;
+    width: 25%;
+    position: fixed;
+    border: 3px solid #dedede46;
+}
+.floating_block hr {
+    border: none;
+    border-top: 1px solid #dedede51;
+    margin: 1em 0;
+}
+.floating_block .creature_card, .floating_block .update_card{
+    transform: scale(1.3);
+    margin-left: 10%;
+    cursor: pointer;
+}
+.floating_block p{
+    margin: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.floating_block input{
+    border: 0px solid #dedede51;
+    margin-left: 5%;
+    margin-right: 10%;
+    border-bottom: 2px solid #dedede51;
+    border-radius: 0, 2px, 2px, 0;
+    background-color: #dedede51;
+    width: 90%;
+    color: #000000;
+    letter-spacing: 0.1em;
+    
+    font-weight: bold;
+}
+.floating_block button{
+    background: #247FFF;
+    height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 50%;
+    border: 2px solid #E9F2FF;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+.modal_creating{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 99;
+    transition: 0.5s;
+}
+.modal_creating .modal_content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    width: 400px;
+    line-height: 1.2;
+    z-index: 999;
+}
+.modal_content input,.modal_content button,.modal_content textarea{
+    margin-top: 10px;
+}
+.active_modal{
+    opacity: 1;
+    pointer-events: all;
+    
+    
+
+}
+.modal_content textarea{
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    min-height: 16vh;
+    padding: 10px;
+    max-height: 16vh;
+    color: #3B5983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #E9F2FF;
+    border-radius: 5px;
+}
+.modal_content textarea:focus{
+    outline: none;
+    border: 2px solid #C1D9FD;
+    padding: 10px;
+}
+footer{
+    background-color: #e3a30e;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+footer p{
+    padding-right: 2vw;
+    
+}
+footer .icon{
+    transform: scale(1.2);
+    margin-right: 2vw;
+    cursor: pointer;
+}
+footer a{
+    color: white;
+}
+footer .icon:hover{
+    transform: scale(1.3);
+}
+footer .content{
+    display: flex;
+    margin-left: 25vw;
+}
+.modal_content button{
+    background: #247FFF;
+    height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    border: 2px solid #E9F2FF;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+}
+.iconInfo{
+    color:  #ffb300;
+    margin-left: 338px;
+    margin-top: 6px;
+    position: absolute;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.iconInfo:hover{
+    transform: scale(1.5);
+}
+.personalAccount h2{
+    margin: 20px;
+}
+.personalAccount .personalData{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 1vw;
+    width: 20vw;
+    float: left;
+}
+.personalAccount .personalData .field{
+    margin-bottom: 5px;
+    border: 2px solid #b4bdca;
+    padding: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.personalAccount .personalData button{
+    background: #247FFF;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    border: 2px solid #E9F2FF;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+}
+.personalAccount .personalData button:hover{
+    transform: scale(1.1);
+}
+.personalAccount .configuration{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 5vw;
+    width: 40vw;
+    float: left;
+    
+}
+.personalAccount .configuration .field{
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 10px;
+    border: 2px solid #b4bdca;
+    padding: 5px;
+    border-radius: 5px;
+
+    padding-right: 20%;
+}
+.personalAccount .configuration button{
+    background: #247FFF;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 60%;
+    border: 2px solid #E9F2FF;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    margin-top: 5px;
+    
+}
+.personalAccount .configuration button:hover{
+    transform: scale(1.1);
+}
+.personalAccount .configuration input{
+    margin-top: 2%;
+    height: 20px;    
+}
+
+.modal_creating .modal_name{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+    width: 400px;
+    line-height: 1.2;
+    height: 500px;
+}
+.modal_name .blok{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    color: #3B5983;
+    font-size: 24px;
+    line-height: 16px;
+    border: 2px solid #e9f2ff00;
+    border-radius: 5px;
+
+}
+.modal_name label{
+    padding: 20px;
+}
+.modal_name option{
+    color: #3B5983;
+    font-size: 14px;
+
+}
+.modal_name button{
+    width: 50%;
+}
+.modal_creating .active_modal .name{
+    margin-top: 2vh;
+}
+.modal_creating button{
+    margin-left: 25%;
+    width: 50%;
+}
+.ProjectInfo{
+    border-radius: 10px;
+    border: 2px solid #a09e9e3b;
+    width: 75vw;
+    min-height: 10vh;
+    
+    margin-top: 0.5vw;
+    padding: 10px;
+    background-color: #817e7e3b;
+}
+.ProjectInfo sup{
+   color: #0d6cf2;
+}
+.AdminWindow{
+    border-radius: 10px;
+    border: 2px solid #cdcdcd3b;
+    width: 75vw;
+    margin-top: 0.5vw;
+    padding: 10px;
+    position: sticky;
+    top: 010px;
+    background-color:#e3a30e;
+    z-index: 9999;
+    line-height: 14px;
+}
+.AdminWindow button{
+    margin-left: 25px;
+    transform: scale(1.1);
+    background: #247FFF;
+    height: 24px;
+    border-radius:5px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 4px;
+    border: 2px solid #e9f2ff06;
+    text-align: center;
+    line-height: 14px;
+
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    
+}
+.AdminWindow p{
+    margin-bottom: 15px;
+}
+.TaskProject{
+    border-radius: 10px;
+    
+    width: 75vw;
+    margin-top: 0.5vw;
+    
+    margin-bottom: 5vh;
+    padding-bottom: 0.5vh;
+
+}
+.TaskСomments{
+    border-radius: 10px;
+    border: 2px solid #cdcdcd3b;
+    width: 22vw;
+    float: right;
+    display: flex;
+    top: 5vh;
+    margin-right: 0.5vw;
+    margin-top: 0.5vw;
+    min-height: 50vh;
+    top: 010px;
+    position: sticky;
+    padding: 10px;
+}
+.contentTasc{
+    display: flex;
+    
+}
+.contentTasc .content-left{
+    width: 75%;
+    margin-left: 0.5vw;
+    
+}
+.contentTasc .content-right{
+    width: 25%;
+    
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.TasksCard .HeadCard{
+    display: flex;
+}
+.HeadCard .specifications{
+    width: 30%;
+
+}
+.HeadCard .opportunities{
+    width: 60%;
+}
+
+.TasksCard {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    border: 2px solid #1717172f;
+    background-color: #cdcdcd3b;
+    
+}
+.TasksCard button{
+    margin-left: 25px;
+    transform: scale(1.1);
+    background: #247FFF;
+    height: 24px;
+    border-radius:5px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 4px;
+    border: 2px solid #e9f2ff06;
+    text-align: center;
+    line-height: 14px;
+
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+}
+
+
+.line {
+    position: relative; /* необходимо для позиционирования псевдоэлемента */
+    margin-bottom: 5px;
+  }
+  
+  .line::after {
+    border-radius: 5px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    margin: 2px;
+    min-height: 1px; /* задает высоту вертикальной линии */
+    width: 100%; /* задает ширину вертикальной линии */
+    background-color: rgba(176, 176, 176, 0.583); /* задает цвет вертикальной линии */
+  }
+  .modal_creating{
+    z-index: 99999999;
+  }
+
+  .inputHeal{
+    width: 10vw;
+    margin-left: 1vw;
+    height: 3vh;
+    padding: 1px;
+  }
+  .searchByName{
+    border: 2px solid rgba(0, 0, 0, 0.217);
+    padding: 9px;
+    z-index: 999999999;
+    margin-left: 1vw;
+    border-radius: 5px;
+  }
+  .searchByName button{
+    margin: 0;
+  }
+
+  .grin{
+    background-color: #33f20d;
+  }
+.TaskСomments{
+    display: inline;
+}
+.CommentCard{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 2vh;
+    border: 2px solid #1717172f;
+    background-color: #cdcdcd3b;
+    height: 100px;
+}
+.CommentsHead{
+    display: flex; 
+    
+    margin-left: 1vw;
+}
+.CommentsHead .icon{
+    margin-left: 100px;
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #33f20d;
+    
+}
+.blok{
+    margin-left: 0;
+}
+label{
+    display: none;
+}
+select{
+    appearance: none;
+    border: 2px solid  #77b0ff47;
+    border-radius: 3px;
+    background-color: transparent;
+    outline: none;
+    padding: 10px 30px 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+.select-wraper{
+    position: relative;
+}
+.select-wraper::before{
+    content: "";
+    position: absolute;
+    top: 55%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: block;
+    pointer-events: none;
+
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #77b0ff47;
+    transform: rotate(180deg);
+    background-color: #77b0ff47 transparent transparent transparent;
+}
+.modal_creating .modal_namer{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+    width: 400px;
+    line-height: 1.2;
+    height: 570px;
+}
+.modal_namer .blok{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    color: #3B5983;
+    font-size: 24px;
+    line-height: 16px;
+    border: 2px solid #e9f2ff00;
+    border-radius: 5px;
+
+}
+.modal_namer label{
+    padding: 20px;
+}
+.modal_namer option{
+    color: #3B5983;
+    font-size: 14px;
+
+}
+.modal_namer button{
+    width: 50%;
+}
+.config .icon{
+    cursor: pointer;
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+.config .icon:hover{
+    
+    transform: scale(1.5);
+    color: rgba(254, 254, 254, 0.443);
+    
+}
+
+.modal_creating .modal_proj{
+    height: 370px;
+}
+.modal_creating .modal_new_user_project{
+    height: 170px;
+}
+.modal_creating .modal_new_user_task{
+    height: 270px;
+}
+.modal_creating .modal_new_user_task p{
+    margin-top: 10px;
+}
+.CommentCard sub{
+    margin-left: 155px;
+}
